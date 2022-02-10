@@ -6,3 +6,5 @@ docker-compose down -v
 
 
 docker-compose up -d
+
+http://ip:8080/
