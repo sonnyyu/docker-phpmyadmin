@@ -1,3 +1,5 @@
+![Screenshot](resource/phpadminmysql.png)
+
 git clone https://github.com/sonnyyu/docker-phpmyadmin/
 
 cd docker-phpmyadmin
