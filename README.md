@@ -8,3 +8,9 @@ docker-compose down -v
 docker-compose up -d
 
 http://ip:8080/
+
+mysql> CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'somepassword';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' WITH GRANT OPTION;
+mysql> FLUSH PRIVILEGES;
+
+mysql -h 127.0.0.1  -uroot -p
