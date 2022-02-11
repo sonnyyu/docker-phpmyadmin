@@ -10,3 +10,10 @@ services:
       - ./ports.conf:/etc/apache2/ports.conf 
     restart: always
     network_mode: "host"
+  haproxy:
+    image: haproxytech/haproxy-alpine:2.4
+    container_name: haproxy
+    volumes:
+      - ./haproxy/etc:/usr/local/etc/haproxy:ro
+    restart: always
+    network_mode: "host"
