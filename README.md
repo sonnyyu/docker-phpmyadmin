@@ -9,7 +9,7 @@ docker-compose down -v
 
 docker-compose up -d
 
-https://ip:8086/
+https://ip:8086/    admin:admin
 
 mysql> CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'somepassword';
 
