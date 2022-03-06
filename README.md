@@ -1,9 +1,9 @@
 ![Screenshot](resource/phpadminmysql.png)
-
+# Install software
+```bash
 git clone https://github.com/sonnyyu/docker-phpmyadmin/
-
 cd docker-phpmyadmin
-
+```
 docker-compose down -v
 
 
