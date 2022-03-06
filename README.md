@@ -4,11 +4,14 @@
 git clone https://github.com/sonnyyu/docker-phpmyadmin/
 cd docker-phpmyadmin
 ```
-docker-compose down -v
-
-
+# Getting started
+```bash
 docker-compose up -d
-
+```
+# Quit and remove volume
+```bash
+docker-compose down  -v
+```
 
 # Open web interface
 https://ip:8086/    admin:admin
