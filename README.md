@@ -16,10 +16,10 @@ docker-compose down  -v
 # Open web interface
 https://ip:8086/    admin:admin
 
-
+# Create DB, User and grant access 
 ```bash
-mysql> CREATE USER 'root'@'127.0.0.1' IDENTIFIED BY 'somepassword';
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' WITH GRANT OPTION;
-mysql> FLUSH PRIVILEGES;
-mysql -h 127.0.0.1  -uroot -p
+CREATE DATABASE wordpress;
+CREATE USER 'wordpress'@'%' IDENTIFIED BY 'wordpress';
+GRANT ALL ON wordpress.* TO 'wordpress'@'%';
+FLUSH PRIVILEGES;
 ```
